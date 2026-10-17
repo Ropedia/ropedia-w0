@@ -40,6 +40,7 @@
   --head-hover: #3a3a3a;
   --bar: #ffffffeb;
   --select: #ccffa0;
+  --select-ink: #10200a;
   /* Ropedia green: the brand #ccffa0 on black, a deeper shade of it on white */
   --logo: var(--head);
   /* cards, media frames and option pills (Cosmos-style panels) */
@@ -90,6 +91,7 @@
   --head-hover: #ffffff;
   --bar: #111111eb;
   --select: #3d5527;
+  --select-ink: #ededed;
   --logo: #ccffa0;
   --card-bg: #ffffff09;
   --card-border: #ffffff21;
@@ -110,7 +112,7 @@ a { color: var(--green); text-decoration: none; }
 a:hover { text-decoration: underline; text-underline-offset: 3px; }
 a, button { transition: color .15s, background-color .15s, border-color .15s; }
 :focus-visible { outline: 2px solid var(--green); outline-offset: 3px; }
-::selection { background: var(--select); }
+::selection { background: var(--select); color: var(--select-ink); text-shadow: none; }
 img, video, canvas { display: block; max-width: 100%; }
 svg { display: block; width: 100%; height: auto; }
 p, figure, h1, h2, h3 { margin: 0; }
