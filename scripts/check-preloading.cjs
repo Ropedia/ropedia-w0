@@ -16,7 +16,7 @@ const normal = { downlink: 5, effectiveType: '4g', saveData: false };
   server.removeAllListeners('request');
   server.on('request', (req, res) => {
     // Exercise the project-page subdirectory used by GitHub Pages as well.
-    req.url = req.url.replace(/^\/Ropedia-W0\//, '/');
+    req.url = req.url.replace(/^\/ropedia-w0\//, '/');
     if (req.url === '/') {
       res.writeHead(200, { 'Content-Type': 'text/html' });
       res.end(fs.readFileSync(path.join(root, 'index.html'), 'utf8').replace(/^.*<link[^\n]*fonts\.(googleapis|gstatic)\.com[^\n]*\n/gm, ''));
@@ -45,7 +45,7 @@ const normal = { downlink: 5, effectiveType: '4g', saveData: false };
     handler(req, res);
   });
   await new Promise(resolve => server.listen(0, '127.0.0.1', resolve));
-  const base = `http://127.0.0.1:${server.address().port}/Ropedia-W0/`;
+  const base = `http://127.0.0.1:${server.address().port}/ropedia-w0/`;
   const browser = await chromium.launch({ executablePath: process.env.CHROME_PATH || undefined, headless: true });
   const waitFor = async (predicate, label) => {
     const start = Date.now();
