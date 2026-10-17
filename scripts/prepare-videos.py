@@ -31,7 +31,7 @@ def encode(job):
 
 
 # Remux the original HD stream; native range requests can start before a 10 s chunk is complete.
-hd = MEDIA / 'film-hd.mp4'
+hd = MEDIA / 'film-w0-hd.mp4'
 if not hd.exists():
     with tempfile.TemporaryDirectory(prefix='xp-film-remux-') as directory:
         joined = Path(directory) / 'joined.mp4'
@@ -43,19 +43,19 @@ if not hd.exists():
                         '-i', str(joined), '-map', '0', '-c', 'copy', '-movflags', '+faststart', str(hd)], check=True)
 
 jobs = [
-    ('teaser.mp4', 'teaser', 1280, 30, 1400, 25, True),
-    ('teaser.mp4', 'teaser-480', 854, 24, 650, 26, True),
-    ('film.mp4', 'film-480', 854, 24, 650, 25, True),
+    ('teaser-w0.mp4', 'teaser-w0', 1280, 30, 1400, 25, True),
+    ('teaser-w0.mp4', 'teaser-480-w0', 854, 24, 650, 26, True),
+    ('film-w0.mp4', 'film-480-w0', 854, 24, 650, 25, True),
     ('hero_backdrop.mp4', 'hero', 1440, 20, 800, 28, False),
     ('hero_backdrop_m.mp4', 'hero-mobile', 600, 20, 450, 28, False),
 ]
 variants = {
-    'media/teaser.mp4': {'preview': 'media/preview/teaser.mp4', 'low': 'media/preview/teaser-480.mp4'},
-    'media/film-hd.mp4': {'preview': 'media/film.mp4', 'low': 'media/preview/film-480.mp4'},
+    'media/teaser-w0.mp4': {'preview': 'media/preview/teaser-w0.mp4', 'low': 'media/preview/teaser-480-w0.mp4'},
+    'media/film-w0-hd.mp4': {'preview': 'media/film-w0.mp4', 'low': 'media/preview/film-480-w0.mp4'},
     'media/hero_backdrop.mp4': {'preview': 'media/preview/hero.mp4'},
     'media/hero_backdrop_m.mp4': {'preview': 'media/preview/hero-mobile.mp4'},
 }
-for name in ['data_human', 'data_robot', 'anno_human', 'anno_robot', 'teleop_wall', 'teleop_modality']:
+for name in ['data_human', 'data_robot', 'anno_human', 'anno_robot', 'teleop_wall', 'teleop_modality-w0']:
     jobs.append((name + '.mp4', name, 960, 24, 750, 26, False))
     jobs.append((name + '.mp4', name + '-small', 640, 20, 350, 27, False))
     variants[f'media/{name}.mp4'] = {'preview': f'media/preview/{name}.mp4', 'low': f'media/preview/{name}-small.mp4'}

@@ -36,10 +36,11 @@ def main():
     demos += [f'long_{i}' for i in range(8)]
     demos += [f'live_{i}' for i in [0, 1, 2, 3, 5, 6]]
     demos += [f'rr{i}_{view}' for i in range(6) for view in ['ego', 'ext']]
-    jobs = [(f'media/{name}.mp4', f'media/{name}.jpg', None) for name in demos]
+    jobs = [(f'media/{name}-w0.mp4' if name == 'teleop_modality' else f'media/{name}.mp4',
+             f'media/{name}.jpg', None) for name in demos]
     # Closing paper-title cards, before the final fade to black.
-    jobs += [('media/teaser.mp4', 'assets/teaser-poster.jpg', 29),
-             ('media/film-hd.mp4', 'assets/film-poster.jpg', 114)]
+    jobs += [('media/teaser-w0.mp4', 'assets/teaser-poster.jpg', 29),
+             ('media/film-w0-hd.mp4', 'assets/film-poster.jpg', 114)]
     with ThreadPoolExecutor(max_workers=3) as pool:
         results = list(pool.map(extract, jobs))
     print(f'Generated {len(demos)} first-frame demo covers and 2 closing title covers '

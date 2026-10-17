@@ -7,7 +7,7 @@ const tok=v=>getComputedStyle(document.documentElement).getPropertyValue(v).trim
   const ip='<svg viewBox="0 0 14 14" fill="currentColor"><path d="M3 1.5v11l9-5.5z"/></svg>',ipa='<svg viewBox="0 0 14 14" fill="currentColor"><rect x="2" y="1" width="3.5" height="12" rx="1"/><rect x="8.5" y="1" width="3.5" height="12" rx="1"/></svg>';
   const on='<svg viewBox="0 0 14 14" fill="currentColor"><path d="M1 5h3l4-3v10L4 9H1z"/><path d="M10 4.5a3.5 3.5 0 0 1 0 5M11.5 3a5.5 5.5 0 0 1 0 8" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>',off=sound.innerHTML;
   let mode='teaser';const LEN={teaser:29.87,full:115.7};
-  XPVideo.setSource(v,'media/teaser.mp4');
+  XPVideo.setSource(v,'media/teaser-w0.mp4');
   p.onclick=()=>v.paused?XPVideo.play(v):XPVideo.pause(v);
   sound.onclick=()=>{v.muted=!v.muted;sound.innerHTML=v.muted?off:on;sound.setAttribute('aria-label',v.muted?'Unmute':'Mute');if(!v.muted&&v.paused)XPVideo.play(v)};
   const button=()=>{p.innerHTML=v.paused?ip:ipa;p.setAttribute('aria-label',v.paused?'Play':'Pause')};
@@ -21,8 +21,8 @@ const tok=v=>getComputedStyle(document.documentElement).getPropertyValue(v).trim
   pick.forEach(b=>b.addEventListener('click',()=>{if(b.dataset.film===mode)return;
     pick.forEach(x=>x.setAttribute('aria-pressed',String(x===b)));mode=b.dataset.film;
     XPVideo.poster(v,mode==='teaser'?'assets/teaser-poster.jpg':'assets/film-poster.jpg');
-    v.setAttribute('aria-label',mode==='teaser'?'Xperience-0 highlights':'Xperience-0 video');
-    XPVideo.setSource(v,mode==='teaser'?'media/teaser.mp4':'media/film-hd.mp4');show();
+    v.setAttribute('aria-label',mode==='teaser'?'Ropedia W0 highlights':'Ropedia W0 video');
+    XPVideo.setSource(v,mode==='teaser'?'media/teaser-w0.mp4':'media/film-w0-hd.mp4');show();
   }));
 })();
 
@@ -175,13 +175,13 @@ scrubber(longVideos,$('#longRange'),$('#longPlay'),$('#longLbl'),f=>`${(f*32).to
 
 })();
 
-// Compare strips: each clip already holds ground truth | Xperience-0 | Cosmos 3-Nano | Cosmos 3-Super side by side; show it whole and label each panel.
+// Compare strips: each clip already holds ground truth | Ropedia W0 | Cosmos 3-Nano | Cosmos 3-Super side by side; show it whole and label each panel.
 // Two kinds of clip, each with its own caption: ω-HOME, a benchmark no model was trained on (all zero-shot); and held-out clips from eight
-// robot datasets, with Cosmos 3 fine-tuned on the same robot mixture that Xperience-0 sees in mid-training (neither is trained on these clips).
+// robot datasets, with Cosmos 3 fine-tuned on the same robot mixture that Ropedia W0 sees in mid-training (neither is trained on these clips).
 (function(){
-  const COLS=['Ground truth','Xperience-0','Cosmos 3-Nano','Cosmos 3-Super'];
+  const COLS=['Ground truth','Ropedia W0','Cosmos 3-Nano','Cosmos 3-Super'];
   const CAP={omega:'<b>Zero-shot</b> on ω-HOME, which no model was trained on. Input skeleton drawn over each generated video; PSNR (dB) per clip.',
-             xemb:'Held-out clip. Xperience-0 saw this robot\'s data in <b>mid-training</b>; Cosmos 3 was <b>fine-tuned</b> on it. Input skeleton drawn over each generated video; PSNR (dB) per clip.'};
+             xemb:'Held-out clip. Ropedia W0 saw this robot\'s data in <b>mid-training</b>; Cosmos 3 was <b>fine-tuned</b> on it. Input skeleton drawn over each generated video; PSNR (dB) per clip.'};
   // Pick a dataset, then one of its tasks (ω-HOME has eight; each other robot dataset has one).
   const om=(name,f,p)=>({name,f,p,kind:'omega',w:1938,h:328,gap:6}),xe=(name,f,p)=>({name,f,p,kind:'xemb',w:1280,h:240,gap:0});
   const D=[['ω-HOME',[om('Arrange the fruit bucket','cmp_0',[19.5,14.2,14.7]),om('Collect toys from the bed','cmp_2',[20.0,16.7,15.7]),om('Take from the upper fridge','cmp_3',[19.8,16.4,16.5]),
@@ -203,10 +203,10 @@ scrubber(longVideos,$('#longRange'),$('#longPlay'),$('#longLbl'),f=>`${(f*32).to
   box.style.setProperty('--strip-min','720px');load(0);
 })();
 
-// Adapting to a new robot: one clip per task, ground truth then Xperience-0 at three post-training budgets.
+// Adapting to a new robot: one clip per task, ground truth then Ropedia W0 at three post-training budgets.
 {const T=['Collect toys from the bed','Wipe the table','Arrange the fruit bucket','Put the towel in the washing machine'],v=$('#adVideo'),lab=$('#adLabels');
   lab.style.gridTemplateColumns='repeat(4,minmax(0,1fr))';
-  lab.innerHTML=['Ground truth','Xperience-0 · zero-shot','Xperience-0 · few-shot','Xperience-0 · 1-epoch'].map((n,i)=>`<span class="${i?'ours':''}">${n}</span>`).join('');
+  lab.innerHTML=['Ground truth','Ropedia W0 · zero-shot','Ropedia W0 · few-shot','Ropedia W0 · 1-epoch'].map((n,i)=>`<span class="${i?'ours':''}">${n}</span>`).join('');
   $('#adTask').innerHTML=T.map((t,i)=>`<button type="button" aria-pressed="${i===0}">${t}</button>`).join('');
   [...$('#adTask').children].forEach((b,i)=>b.addEventListener('click',()=>{[...$('#adTask').children].forEach(x=>x.setAttribute('aria-pressed',String(x===b)));
     XPVideo.poster(v,`media/lib/adp${i}.jpg`);XPVideo.setSource(v,`media/lib/adp${i}.mp4`);XPVideo.play(v)}));}

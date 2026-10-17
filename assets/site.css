@@ -1,4 +1,4 @@
-/* Xperience-0 project page, laid out like a research blog post:
+/* Ropedia W0 project page, laid out like a research blog post:
    logo header, serif title and authors, the film, then a numbered contents rail beside the article. */
 :root {
   color-scheme: light;
@@ -14,7 +14,7 @@
   --card: #ffffff;
   --surface: #f4f4f4;
   --night: #0f0f10;
-  /* accent, Ropedia green: section numbers, links, the active contents entry and Xperience-0 in charts.
+  /* accent, Ropedia green: section numbers, links, the active contents entry and Ropedia W0 in charts.
      The brand #ccffa0 is used on black; on white it fills pills, toggles and selections, and text uses #3b8000, a darker shade of the same hue that stays readable. */
   --brand-green: #ccffa0;
   --green: #3b8000;
@@ -363,7 +363,7 @@ svg .a { fill: var(--green); font-weight: 600; }
 .legend { display: flex; flex-wrap: wrap; gap: 6px 18px; list-style: none; margin: 0; padding: 0; font-size: 13px; color: var(--sub); }
 .legend li { display: flex; align-items: center; gap: 7px; }
 .legend i { width: 10px; height: 10px; }
-/* Scaling: four small trend charts in one row, the human pair beside the robot pair; every line is Xperience-0, so all are green. */
+/* Scaling: four small trend charts in one row, the human pair beside the robot pair; every line is Ropedia W0, so all are green. */
 .sc-wrap { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 12px; }
 .scaling .chart { gap: 6px; padding: 14px 12px 8px 14px; }
 .scaling .ct { font-size: 13.5px; }
@@ -677,19 +677,13 @@ article#research > figure:has(> #wall) { max-width: var(--text); }
   .toc a.in { background: var(--accent-soft); color: var(--green); font-weight: 500; }
 }
 
-/* Cover title: the model's name on its own line, large and centred, under a small "Ropedia W0" label,
-   with the full title beneath it as a subtitle. */
+/* Cover title: the model name, with the full research title beneath it. */
 .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 .hero h1.title-stack { display: grid; justify-items: center; gap: 0; text-wrap: balance; }
-.title-alias { display: inline-flex; align-items: center; gap: 14px; margin: 10px 0 2px; color: #ffffffe6; text-shadow: 0 1px 14px #000c; font: 500 23px/1.2 "Lora", Georgia, serif; letter-spacing: .02em; }   /* upright, so "W0" reads as W-zero */
-.title-alias { order: 0; }   /* under the name, before the subtitle: same order as the paper title */
-.title-alias::before, .title-alias::after { content: ""; width: 36px; height: 1px; background: #ccffa0b3; }   /* thin rules either side */
 .title-name { display: block; font: 600 clamp(52px, 6.4vw, 92px)/1.02 "Lora", Georgia, serif; letter-spacing: -.03em; white-space: nowrap; }
 .title-name .title-tag { color: #ccffa0; }
 .title-sub { display: block; margin-top: 16px; font: 500 clamp(22px, 2.4vw, 34px)/1.25 "Lora", Georgia, serif; letter-spacing: -.015em; color: #ffffffeb; }
 @media (max-width: 640px) {
-  .title-alias { gap: 12px; margin: 8px 0 0; font-size: 19px; }
-  .title-alias::before, .title-alias::after { width: 32px; }
   .title-name { font-size: 46px; }
   .title-sub { margin-top: 10px; font-size: 20px; }
 }
@@ -831,7 +825,7 @@ div.experiment.ldfig { gap: 16px; }
 .radar-side { display: grid; gap: 22px; align-content: center; }
 .radar-side ul { gap: 12px; }
 .radar-note { margin: 0; padding-top: 16px; border-top: 1px solid var(--line); color: var(--text-soft); font-size: 14px; line-height: 1.55; }
-/* Chart fills for Xperience-0: the accent itself on black; on white a softer, less saturated green so large bars don't glare. */
+/* Chart fills for Ropedia W0: the accent itself on black; on white a softer, less saturated green so large bars don't glare. */
 :root { --bar-strong: var(--green); --bar-soft: var(--lime-soft); }
 :root:not([data-theme="dark"]) { --bar-strong: #5b8a3c; --bar-soft: #bcd8ab; }
 

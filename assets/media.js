@@ -4,7 +4,7 @@
   const states = new Map();
   const variants = window.XP_VIDEO_VARIANTS || {};
   const posterRequests = new WeakMap();
-  const POSTER_VERSION = '20261017-cover-frames';
+  const POSTER_VERSION = '20261018-ropedia-w0';
   const sizes = window.XP_VIDEO_SIZES || {};
   const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
   const connection = navigator.connection || {};
