@@ -1,0 +1,143 @@
+{
+ "embodiments": [
+  {
+   "name": "AgiBot World",
+   "task": "Scan a person's leg with a metal detector",
+   "src": "media/lib/emb0"
+  },
+  {
+   "name": "HIW-500",
+   "task": "Hang clothes on the rack",
+   "src": "media/lib/emb1"
+  },
+  {
+   "name": "AgiBot head camera",
+   "task": "Put a bottle in the green container",
+   "src": "media/lib/emb2"
+  },
+  {
+   "name": "Fourier",
+   "task": "Move potatoes into a white basket",
+   "src": "media/lib/emb3"
+  },
+  {
+   "name": "RH20T",
+   "task": "Stack five blocks in a vertical line",
+   "src": "media/lib/emb4"
+  },
+  {
+   "name": "DROID",
+   "task": "Fully open the drawer",
+   "src": "media/lib/emb5"
+  },
+  {
+   "name": "DECO-50",
+   "task": "Drop paper into the trash bin",
+   "src": "media/lib/emb6"
+  },
+  {
+   "name": "T-Rex",
+   "task": "Coil string around a screwdriver",
+   "src": "media/lib/emb7"
+  },
+  {
+   "name": "UnifoLM WBT",
+   "task": "Walk up to the bed and reach for the duvet",
+   "src": "media/lib/emb8"
+  },
+  {
+   "name": "Humanoid Everyday",
+   "task": "Press a key on the keyboard",
+   "src": "media/lib/emb9"
+  },
+  {
+   "name": "Dexora",
+   "task": "Plug the power brick into the strip",
+   "src": "media/lib/emb10"
+  },
+  {
+   "name": "Baihu",
+   "task": "Place an egg on the plate",
+   "src": "media/lib/emb11"
+  },
+  {
+   "name": "PH2D",
+   "task": "Put a pink cube in the bin",
+   "src": "media/lib/emb12"
+  },
+  {
+   "name": "GR00T Teleop G1",
+   "task": "Place a pear on the plate",
+   "src": "media/lib/emb13"
+  },
+  {
+   "name": "HumanPlus",
+   "task": "Fold up the shirt",
+   "src": "media/lib/emb14"
+  },
+  {
+   "name": "Ψ0",
+   "task": "Box the toys and carry them to the chair",
+   "src": "media/lib/emb15"
+  },
+  {
+   "name": "GR-1",
+   "task": "Put a star fruit on the lower shelf",
+   "src": "media/lib/emb16"
+  },
+  {
+   "name": "Human · EgoDemo",
+   "task": "Replace a bedside lamp bulb",
+   "src": "media/lib/emb17"
+  },
+  {
+   "name": "Human · OpenAOE",
+   "task": "Fold a paper towel",
+   "src": "media/lib/emb18"
+  },
+  {
+   "name": "Unitree G1 · Inspire",
+   "task": "Put an apple in the basket",
+   "src": "media/lib/emb19"
+  }
+ ],
+ "egomotion": [
+  {
+   "name": "Human",
+   "dist": "2.44 m",
+   "src": "media/lib/ego0"
+  },
+  {
+   "name": "Human",
+   "src": "media/lib/ego1"
+  },
+  {
+   "name": "Human",
+   "dist": "1.28 m",
+   "src": "media/lib/ego3"
+  },
+  {
+   "name": "HIW-500 robot",
+   "dist": "2.90 m",
+   "src": "media/lib/ego4"
+  },
+  {
+   "name": "HIW-500 robot",
+   "dist": "1.65 m",
+   "src": "media/lib/ego5"
+  },
+  {
+   "name": "UnifoLM robot",
+   "dist": "1.28 m",
+   "src": "media/lib/ego6"
+  },
+  {
+   "name": "Unitree G1 robot",
+   "src": "media/lib/ego2"
+  },
+  {
+   "name": "Unitree G1 robot",
+   "src": "media/lib/ego7"
+  }
+ ]
+}
