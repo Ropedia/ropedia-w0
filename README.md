@@ -133,7 +133,7 @@ The Wan2.2 base model and the source datasets of the example clips remain subjec
 @article{liu2026ropedia,
   title={Ropedia W0: Scaling Loco-Manipulation World Models across Embodiments with Human Experience},
   author={Liu, Tianqi and Zhao, Hanfei and Liang, Qifeng and Pang, Hui En and Xu, Jiarui and Mu, Sayang and Qiu, Penghao and Zhang, YingSheng and Wang, Jun and Cao, Ziang and Sun, Mingze and Cao, Yukang and Hong, Fangzhou and Chen, Zhaoxi and Liu, Ziwei},
-  journal={arXiv preprint arXiv:<ARXIV_ID>},
+  journal={Technical report},
   year={2026}
 }
 ```
