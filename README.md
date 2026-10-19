@@ -9,7 +9,7 @@
 <a href="https://huggingface.co/datasets/ropedia-ai/Xp-Teleop"><img src="https://img.shields.io/badge/Hugging%20Face-Teleop%20Data-orange" alt="Xp-Teleop data"></a>
 <a href="LICENSE"><img src="https://img.shields.io/badge/License-Apache--2.0-green" alt="License"></a>
 
-https://github.com/user-attachments/assets/41ee7ce0-05ad-47a9-aafb-59c2dadbaa6d
+https://github.com/user-attachments/assets/97534c19-4310-48b5-bdc8-6d0d2867091d
 
 **Ropedia W0** is an egocentric world foundation model that learns **loco-manipulation** from **10k hours of human experience** and transfers it across embodiments, from robot arms to humanoids and from grippers to dexterous hands, through **one shared kinematic interface** of camera poses and projected skeletons.
 
