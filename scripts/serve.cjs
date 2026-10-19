@@ -4,7 +4,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 const mime = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript; charset=utf-8',
   '.css': 'text/css; charset=utf-8', '.mp4': 'video/mp4', '.jpg': 'image/jpeg',
-  '.svg': 'image/svg+xml', '.json': 'application/json' };
+  '.svg': 'image/svg+xml', '.json': 'application/json', '.pdf': 'application/pdf' };
 
 function createServer(root = path.resolve(__dirname, '..')) {
   return http.createServer((request, response) => {
