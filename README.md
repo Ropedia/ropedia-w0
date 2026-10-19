@@ -2,7 +2,7 @@
 
 # Ropedia W0: Scaling Loco-Manipulation World Models across Embodiments with Human Experience
 
-<a href="https://arxiv.org/abs/<ARXIV_ID>"><img src="https://img.shields.io/badge/Paper-Arxiv-b31b1b.svg" alt="Paper"></a>
+<a href="https://drive.google.com/file/d/1_EmBFUXP9sownp1Q3Bw6tAGcuFW5EdsQ/view?usp=sharing"><img src="https://img.shields.io/badge/Paper-PDF-b31b1b.svg" alt="Paper"></a>
 <a href="https://ropedia.github.io/ropedia-w0/"><img src="https://img.shields.io/badge/Project-Website-blue" alt="Project Page"></a>
 <a href="https://youtu.be/5I3a1G-mDko"><img src="https://img.shields.io/badge/YouTube-Video-red?logo=youtube&logoColor=red" alt="YouTube Video"></a>
 <a href="https://huggingface.co/ropedia-ai/Ropedia-W0"><img src="https://img.shields.io/badge/Hugging%20Face-Model-yellow" alt="Hugging Face Model"></a>
