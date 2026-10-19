@@ -70,8 +70,7 @@ def _ramp(c0, c1, n=4):
 # OpenPose / ControlNet-style hand palette, 21 entries, RGB. Each finger has
 # its own hue with a brightness gradient from MCP (dark) to tip (bright).
 # Left and right hand share the palette — the model learns side from spatial
-# position. (The offline renderer stores the same palette in BGR for cv2;
-# values here are converted to RGB so the rendered colors are identical.)
+# position.
 HAND_COLORS_RGB: List[Tuple[int, int, int]] = [
     (200, 200, 200),                                                   # 0   : wrist (light grey, root anchor)
     *_ramp((100,   0,   0), (255,   0,   0)),                          # 1-4 : thumb  (dark red → red)

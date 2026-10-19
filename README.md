@@ -55,7 +55,7 @@ https://github.com/user-attachments/assets/97534c19-4310-48b5-bdc8-6d0d2867091d
     pip install torch==2.11.0 torchvision==0.26.0 --index-url https://download.pytorch.org/whl/cu128
     pip install -r requirements.txt
     ```
-3. Download the Wan2.2 base model (VAE, text encoder and tokenizer):
+3. Download the Wan2.2-TI2V-5B base model (the full repository):
     ```sh
     hf download Wan-AI/Wan2.2-TI2V-5B --local-dir models/Wan2.2-TI2V-5B
     ```

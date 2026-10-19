@@ -269,7 +269,7 @@ def build_parser(model: str, description: str):
     # Checkpoint
     parser.add_argument("--ckpt", type=str, required=True, help="Ropedia W0 checkpoint (full DiT state dict)")
     parser.add_argument("--base_model_dir", type=str, default="models/Wan2.2-TI2V-5B",
-                        help="local download of Wan-AI/Wan2.2-TI2V-5B (VAE, umT5 text encoder, tokenizer)")
+                        help="local download of the full Wan-AI/Wan2.2-TI2V-5B repository")
     parser.add_argument("--ckpt_type", type=str, choices=("full",), default="full",
                         help="the released checkpoints are full DiT state dicts")
     parser.add_argument("--camera_in_dim", type=int, default=cfg["camera_in_dim"])

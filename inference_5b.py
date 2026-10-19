@@ -4,7 +4,7 @@
 Weights: the released full DiT state dicts (``w0-5b-*.safetensors`` from ropedia-ai/Ropedia-W0). They already
 contain the camera and skeleton condition branches; the defaults (--ckpt_type full --camera_in_dim 96
 --skeleton_in_dim 48, 640x480, 81 frames) match them. ``--base_model_dir`` points at a local download
-of Wan-AI/Wan2.2-TI2V-5B (VAE, umT5 text encoder, tokenizer; default models/Wan2.2-TI2V-5B).
+of the full Wan-AI/Wan2.2-TI2V-5B repository (default models/Wan2.2-TI2V-5B).
 
 Each sample is a window ``[s, s+num_frames)`` of the source clip; the RGB video, skeleton video,
 camera parameters and skeleton mask are all sliced with the same window. Only the first frame of

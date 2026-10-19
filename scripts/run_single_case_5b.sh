@@ -1,7 +1,7 @@
 #!/bin/bash
 # Single-clip inference with the Ropedia W0 5B model.
-# A clip directory must contain: video.mp4 (GT, first frame used as I0),
-# data.npz (c2w extrinsics + intrinsics + caption), skeleton.mp4 (rendered kinematics).
+# A clip directory must contain: video.mp4 (its first frame conditions the model; the rest is the reference),
+# data.npz (intrinsics + camera-to-world extrinsics), skeleton.mp4 (rendered skeleton condition) and prompt.txt.
 # FPS (default 16) sets the fps of the written videos; CFG (default 5.0) the guidance scale (3.0 for robot data);
 # NUM_FRAMES (default 81) the clip length (49 for the GR-1 clips);
 # BASE_MODEL_DIR (default models/Wan2.2-TI2V-5B) the local download of Wan-AI/Wan2.2-TI2V-5B.

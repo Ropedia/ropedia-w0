@@ -689,7 +689,7 @@ class WanVideoUnit_HandSkeletonEncode(PipelineUnit):
     frame count as the output video) with the video VAE into
     ``skeleton_latents``; ``WanModel.skeleton_patch_embed`` adds them onto the
     video patch embedding. If ``hand_skeleton_mask`` (T,) is given, frames with
-    mask 0 are blacked out before encoding (the released benchmarks use an
+    mask 0 are blacked out before encoding (the example clips use an
     all-ones mask). No-op without a skeleton video or skeleton branch.
     """
 
