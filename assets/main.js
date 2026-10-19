@@ -268,7 +268,7 @@ function drawPolicy(){const s=$('#ev');s.innerHTML='';$('#pl').innerHTML='';cons
 drawCharts();
 // Redraw when the layout crosses into or out of the compact phone form (the media query's change event, with resize as a fallback).
 {let was=phoneCharts.matches;const sync=()=>{if(phoneCharts.matches!==was){was=phoneCharts.matches;drawScalingAll()}};phoneCharts.addEventListener('change',sync);addEventListener('resize',sync)}
-// Copy button for the BibTeX block (#bib, #copyBib); does nothing until the entry commented out in index.html is restored.
+// Copy the BibTeX block as plain text.
 $('#copyBib')?.addEventListener('click',e=>{const b=e.currentTarget,t=$('#bib').textContent;navigator.clipboard.writeText(t).then(()=>{b.textContent='✓'},()=>{const r=document.createRange();r.selectNodeContents($('#bib'));const s=getSelection();s.removeAllRanges();s.addRange(r);b.textContent='⌘C'});setTimeout(()=>b.textContent='⧉',1800)});
 
 // Follow the reading position, including jumps that skip an observer's narrow band.

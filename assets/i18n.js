@@ -116,8 +116,8 @@ const TEXT={
 'Reference':'参考','.':'。','Citation':'引用','Coming soon':'即将发布','Back to top ↑':'返回顶部 ↑',
 // controls and accessible names
 'Background':'背景','White background':'白色背景','Black background':'黑色背景','Language':'语言','Sections':'章节','Paper resources':'论文资源',
-'Paper (arXiv) coming soon':'论文（arXiv）即将发布','Video (YouTube) coming soon':'视频（YouTube）即将发布','Code coming soon':'代码即将发布',
-'Model weights (Hugging Face) coming soon':'模型权重（Hugging Face）即将发布','Xp-Teleop dataset (Hugging Face) coming soon':'Xp-Teleop 数据集（Hugging Face）即将发布',
+'Read the paper':'阅读论文','Watch the video on YouTube':'在 YouTube 观看视频','View code on GitHub':'在 GitHub 查看代码',
+'View model weights on Hugging Face':'在 Hugging Face 查看模型权重','Copy BibTeX':'复制 BibTeX',
 'Scroll to the video':'滚动到视频','Research video':'研究视频','Ropedia W0 video':'Ropedia W0 视频','Seek the video':'拖动视频进度',
 'Play':'播放','Pause':'暂停','Enter full screen':'全屏','Exit full screen':'退出全屏','Unmute':'取消静音','Mute':'静音','Video time':'视频时间',
 'Data videos':'数据视频','View':'视图','Data budget':'数据量','Task':'任务','Embodiment':'本体','Session':'片段',
