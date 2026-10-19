@@ -1,0 +1,18 @@
+# Inference dependencies (torch and torchvision are installed separately, see README).
+numpy==2.4.6
+pillow==12.3.0
+ImageIO==2.37.3
+imageio-ffmpeg==0.6.0
+einops==0.8.2
+safetensors==0.8.0
+transformers==5.13.1
+tokenizers==0.22.2
+sentencepiece==0.2.2
+protobuf==7.35.1
+ftfy==6.3.1
+regex==2026.7.10
+tqdm==4.68.4
+huggingface_hub==1.23.0
+scipy==1.18.0
+PyYAML==6.0.3
+opencv-python-headless==5.0.0.93

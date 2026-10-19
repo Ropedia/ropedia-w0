@@ -1,0 +1,9 @@
+__pycache__/
+*.py[cod]
+*.log
+*.safetensors
+*.pt
+*.pth
+/weights/
+/outputs/
+out_case_*/

@@ -1,0 +1,1 @@
+From an egocentric perspective, the robot is in a room with a light-colored wooden floor and a white desk. Its left hand, which is black and white, is placed on the left armrest of a black office chair. As the robot leans its torso forward, it pushes the chair away from itself. The right hand remains out of view throughout the action.
