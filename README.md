@@ -2,7 +2,7 @@
 
 # Ropedia W0: Scaling Loco-Manipulation World Models across Embodiments with Human Experience
 
-<a href="https://ropedia.github.io/ropedia-w0/ropedia-w0.pdf"><img src="https://img.shields.io/badge/Paper-PDF-b31b1b.svg" alt="Paper"></a>
+<a href="https://arxiv.org/abs/2610.26855"><img src="https://img.shields.io/badge/arXiv-2610.26855-b31b1b.svg?logo=arxiv&logoColor=b31b1b" alt="arXiv"></a>
 <a href="https://ropedia.github.io/ropedia-w0/"><img src="https://img.shields.io/badge/Project-Website-blue" alt="Project Page"></a>
 <a href="https://youtu.be/5I3a1G-mDko"><img src="https://img.shields.io/badge/YouTube-Video-red?logo=youtube&logoColor=red" alt="YouTube Video"></a>
 <a href="https://huggingface.co/ropedia-ai/Ropedia-W0"><img src="https://img.shields.io/badge/Hugging%20Face-Model-yellow" alt="Hugging Face Model"></a>
@@ -133,7 +133,7 @@ The Wan2.2 base model and the source datasets of the example clips remain subjec
 @article{liu2026ropedia,
   title={Ropedia W0: Scaling Loco-Manipulation World Models across Embodiments with Human Experience},
   author={Liu, Tianqi and Zhao, Hanfei and Liang, Qifeng and Pang, Hui En and Xu, Jiarui and Mu, Sayang and Qiu, Penghao and Zhang, YingSheng and Wang, Jun and Cao, Ziang and Sun, Mingze and Cao, Yukang and Hong, Fangzhou and Chen, Zhaoxi and Liu, Ziwei},
-  journal={Technical report},
+  journal={arXiv preprint arXiv:2610.26855},
   year={2026}
 }
 ```
