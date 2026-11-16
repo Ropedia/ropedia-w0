@@ -1,6 +1,6 @@
 # Inference dependencies (torch and torchvision are installed separately, see README).
 numpy==2.4.6
-pillow==12.3.0
+pillow==13.0.0
 ImageIO==2.37.3
 imageio-ffmpeg==0.6.0
 einops==0.8.2
